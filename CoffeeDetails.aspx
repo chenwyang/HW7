@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Height="50px" Width="125px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Height="50px" Width="160px">
             <Fields>
                 <asp:BoundField DataField="name" HeaderText="Name of Coffee" SortExpression="name" />
                 <asp:BoundField DataField="type" HeaderText="Grind Type" SortExpression="type" />
