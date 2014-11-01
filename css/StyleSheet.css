@@ -44,7 +44,6 @@ h3 {font-family: Arial, Verdana, Forte;}
       margin: 0;
       padding: 0; 
       float:left; 
-     
 }
 
 #nav li {
@@ -52,8 +51,8 @@ h3 {font-family: Arial, Verdana, Forte;}
    border-top: 1px solid black;
     border-bottom: 1px solid black;    
     border-right: 1px solid black; 
-    text-align:left; 
-      
+    text-align:left;
+  
 }
 
 #nav li a {
