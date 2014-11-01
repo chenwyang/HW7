@@ -4,9 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    </title>
     <link rel="stylesheet" type="text/css" href="css/StyleSheet.css" />
 </head>
 <body>
@@ -16,13 +17,10 @@
                 <h1>Worldwide Coffee</h1>
                 <h3>So many types of coffee!</h3>
             </div> <!-- close the header DIV -->
-
-            <div id="right_header">
-                <img src="./css/logo.jpg" height="150px" />
-            </div> <!-- close the right DIV -->   
-    
+            
             <div id="menu">
                 <ul id="nav">
+                    <li><a href="Default.aspx">Home</a></li>
                     <li><a href="./ViewAllCoffee.aspx">View All Coffee</a></li>
                     <li><a href="./Admin/ViewAllCoffee.aspx">Admin</a></li>
                 </ul>

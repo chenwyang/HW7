@@ -1,17 +1,12 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ViewAllCoffee.aspx.vb" Inherits="ViewAllCoffee" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/coffee.master" AutoEventWireup="false" CodeFile="ViewAllCoffee.aspx.vb" Inherits="admin_ViewAllCoffee" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    Admin-View All Coffee
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-     <link rel="stylesheet" type="text/css" href="../css/StyleSheet.css" />
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" AllowSorting="True">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <br />
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" AllowSorting="True">
             <Columns>
                 <asp:BoundField DataField="name" HeaderText="Name of Country" SortExpression="name" />
                 <asp:BoundField DataField="type" HeaderText="Grind Type" SortExpression="type" />
@@ -43,8 +38,5 @@
                 <asp:Parameter Name="id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-    
-    </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+

@@ -1,11 +1,17 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/coffee.master" AutoEventWireup="false" CodeFile="CoffeeDetails.aspx.vb" Inherits="admin_CoffeeDetails" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="xCoffeeDetails.aspx.vb" Inherits="CoffeeDetails" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-    Admin-Coffee Details
-</asp:Content>
+<!DOCTYPE html>
 
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-      <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Height="50px" Width="160px">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link rel="stylesheet" type="text/css" href="../css/StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Height="50px" Width="160px">
             <Fields>
                 <asp:BoundField DataField="name" HeaderText="Name of Coffee" SortExpression="name" />
                 <asp:BoundField DataField="type" HeaderText="Grind Type" SortExpression="type" />
@@ -44,5 +50,8 @@
                 <asp:Parameter Name="id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-</asp:Content>
-
+    
+    </div>
+    </form>
+</body>
+</html>
