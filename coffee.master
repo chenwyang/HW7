@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" CodeFile="coffee.master.vb" Inherits="coffee" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="css/StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="container">
+            <div id="header">
+                <h1>Worldwide Coffee</h1>
+                <h3>So many types of coffee!</h3>
+            </div> <!-- close the header DIV -->
+
+            <div id="right_header">
+                <img src="./css/logo.jpg" height="150px" />
+            </div> <!-- close the right DIV -->   
+    
+            <div id="menu">
+                <ul id="nav">
+                    <li><a href="./ViewAllCoffee.aspx">View All Coffee</a></li>
+                    <li><a href="./Admin/ViewAllCoffee.aspx">Admin</a></li>
+                </ul>
+            </div> <!-- close the menu DIV -->
+
+
+            <div id="main">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div> <!-- close the main DIV -->
+
+            <div id="footer">
+                &copy; 2014 MSCI:3300 - Software Design and Development 
+            </div> <!-- close the footer DIV -->
+        </div>
+    </form>
+</body>
+</html>

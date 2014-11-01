@@ -1,4 +1,74 @@
-﻿.validationError {
+﻿body {background-color: white;}
+
+h1 {font-family: Arial, Helvetica, sans-serif;}
+h3 {font-family: Arial, Verdana, Forte;}
+
+#container {
+    background-color: gray;
+    margin: 0 auto;
+}
+
+#header {background-color:#FF0000;
+         color:white;
+         padding:10px; 
+         margin: 0 auto; 
+         width:548.5px;
+         height:150px;
+         border-top: 1px solid black;
+         border-left: 1px solid black;
+         border-bottom: 1px solid black;    
+         text-align: center; 
+         float:left;
+         
+}
+
+#right_header {background-color:#FF0000;
+               padding: 10px;
+               margin:0 auto; 
+               float:right;
+               height:150px;
+               border-top: 1px solid black;   
+               border-bottom: 1px solid black;
+               border-right: 1px solid black;
+}
+
+#main { background-color:#C0C0C0;
+        color:black;
+        margin: 0 auto;
+        border-left: 1px solid black;
+        border-right: 1px solid black; 
+        text-align:center; 
+}
+
+#footer { background-color: #000000;
+          color: white;
+          margin: 0 auto;
+          text-align:center; 
+
+}
+
+#nav {background-color:#000000;
+      list-style: none;
+      margin: 0 auto;
+}
+
+#nav li {
+    float:left;
+}
+
+#nav li a {
+    display: block;
+    font-weight:bold;
+    padding: 2px 2px; 
+    color:white;
+}
+
+.center_img {display: block;
+             margin-left: auto;
+             margin-right:auto;
+}
+
+.validationError {
     color: red;
     font-weight: bold;
 }
