@@ -24,6 +24,7 @@
                      <li><asp:HyperLink ID="Link_ViewAllCoffee" runat="server" NavigateUrl="~/ViewAllCoffee.aspx">View All Coffee</asp:HyperLink></li>
                     <li><asp:HyperLink ID="Link_Admin" runat="server" NavigateUrl="~/admin/Default.aspx">Admin</asp:HyperLink></li>
                     <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
+                    <li><asp:HyperLink ID="Link_Search" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink></li>
                 </ul>
             </div> <!-- close the menu DIV -->
 

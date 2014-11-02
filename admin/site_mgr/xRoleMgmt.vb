@@ -1,7 +1,10 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
-Partial Class admin_site_mgr_RoleMgmt
+
+
+Partial Class Account_AddRole
     Inherits System.Web.UI.Page
+
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
 
         If Not IsPostBack Then
@@ -212,4 +215,6 @@ Partial Class admin_site_mgr_RoleMgmt
         Response.AddHeader("REFRESH", "2;URL=RoleMgmt.aspx")
 
     End Sub
+
+   
 End Class

@@ -1,11 +1,11 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="../coffee.master" AutoEventWireup="false" CodeFile="UserMgmt.aspx.vb" Inherits="admin_site_mgr_UserMgmt" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/coffee.master" AutoEventWireup="false" CodeFile="UserMgmt.aspx.vb" Inherits="admin_site_mgr_UserMgmt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     Admin-Manage Users
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <asp:HyperLink ID="link_roleManager" runat="server" NavigateUrl="~/site_mgr/RoleMgmt.aspx">Role Manager</asp:HyperLink>
+    <asp:HyperLink ID="link_roleManager" runat="server" NavigateUrl="~/site_mgr/RoleMgmt.aspx">Role Manager</asp:HyperLink>
         <h3>Create A New User:</h3>
         <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
             <WizardSteps>
@@ -16,10 +16,10 @@
                                 <td align="center" colspan="2">Sign Up for Your New Account</td>
                             </tr>
                             <tr>
-                                <td align="right">
+                                <td align="right" class="auto-style1">
                                     <asp:Label ID="UserNameLabel" runat="server" AssociatedControlID="UserName">User Name:</asp:Label>
                                 </td>
-                                <td>
+                                <td class="auto-style1">
                                     <asp:TextBox ID="UserName" runat="server"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="UserNameRequired" runat="server" ControlToValidate="UserName" ErrorMessage="User Name is required." ToolTip="User Name is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
                                 </td>
@@ -38,7 +38,7 @@
                                     <asp:Label ID="ConfirmPasswordLabel" runat="server" AssociatedControlID="ConfirmPassword">Confirm Password:</asp:Label>
                                 </td>
                                 <td>
-                                    <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox ID="ConfirmPassword" runat="server" TextMode="Password" Height="22px"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="ConfirmPasswordRequired" runat="server" ControlToValidate="ConfirmPassword" ErrorMessage="Confirm Password is required." ToolTip="Confirm Password is required." ValidationGroup="CreateUserWizard1">*</asp:RequiredFieldValidator>
                                 </td>
                             </tr>
