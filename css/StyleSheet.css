@@ -5,6 +5,21 @@ h3 {font-family: Arial, Verdana, Forte;
     text-align: justify;
 }
 
+.cssgridview{
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left; 
+}
+
+.cssdetailsview{
+    width:300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:left; 
+
+}
+
 #container {
     background-color: gray;
     margin: 0 auto;

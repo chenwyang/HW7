@@ -33,6 +33,9 @@
 
 
             <div id="main">
+                <br /><br />
+                    Today's date is: <asp:Label ID="lblMsg" runat="server" ><%= String.Format("{0:d}", DateTime.Now) %></asp:Label>
+                    <!--source:http://forums.asp.net/t/1218217.aspx?Databind+label+with+DateTime -->
                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
                 </asp:ContentPlaceHolder>

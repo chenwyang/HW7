@@ -36,11 +36,10 @@
         <asp:TextBox ID="tb_Coffee" runat="server" AutopostBack="True" Width="128px"></asp:TextBox>
  
     <% Else%>
-        <br />
         Search for another tool by name: &nbsp; &nbsp; &nbsp;
         <br />
         <asp:TextBox ID="tb_Coffee2" runat="server" AutopostBack="True" Width="128px"></asp:TextBox>
-    
+        <br />
         <asp:GridView runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlDataSource1" AllowSorting="True">
             <Columns>
                 <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
@@ -53,7 +52,8 @@
                 <asp:BoundField DataField="notes" HeaderText="notes" SortExpression="notes" />
             </Columns>
         </asp:GridView>
+
     <%End If%>
-    
+            
 </asp:Content>
 

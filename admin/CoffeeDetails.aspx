@@ -5,8 +5,9 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+     <link rel="stylesheet" type="text/css" href="../css/StyleSheet.css"/>
     <br /><br />
-      <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Height="50px" Width="160px">
+      <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="id" DataSourceID="SqlDataSource1" Height="50px" Width="160px" CssClass="cssdetailsview">
             <Fields>
                 <asp:BoundField DataField="name" HeaderText="Name of Coffee" SortExpression="name" />
                 <asp:BoundField DataField="type" HeaderText="Grind Type" SortExpression="type" />
