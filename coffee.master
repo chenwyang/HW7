@@ -22,9 +22,12 @@
                 <ul id="nav">
                     <li><asp:HyperLink ID="Link_Home" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
                      <li><asp:HyperLink ID="Link_ViewAllCoffee" runat="server" NavigateUrl="~/ViewAllCoffee.aspx">View All Coffee</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="Link_Search" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="Link_About" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink></li>
+                    <li><asp:HyperLink ID="Link_Contact" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
                     <li><asp:HyperLink ID="Link_Admin" runat="server" NavigateUrl="~/admin/Default.aspx">Admin</asp:HyperLink></li>
                     <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
-                    <li><asp:HyperLink ID="Link_Search" runat="server" NavigateUrl="~/search.aspx">Search</asp:HyperLink></li>
+                    
                 </ul>
             </div> <!-- close the menu DIV -->
 

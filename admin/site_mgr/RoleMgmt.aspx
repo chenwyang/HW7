@@ -4,7 +4,8 @@
     Admin-Manage Roles
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <asp:HyperLink ID="link_userManager" runat="server" NavigateUrl="~/site_mgr/UserMgmt.aspx">User Manager</asp:HyperLink>
+     <br /><br />
+     <asp:HyperLink ID="link_userManager" runat="server" NavigateUrl="~/admin/site_mgr/UserMgmt.aspx">User Manager</asp:HyperLink>
 
             <br /><br /><hr />
             

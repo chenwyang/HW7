@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
      
-    <br />
+    <br /><br />
     <asp:Image ID="img_coffee" runat="server" Height="200px" ImageUrl="~/images/CoffeeBean.jpg" Width="300px" />
 
 </asp:Content>

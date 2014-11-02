@@ -5,7 +5,9 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:HyperLink ID="link_roleManager" runat="server" NavigateUrl="~/site_mgr/RoleMgmt.aspx">Role Manager</asp:HyperLink>
+    <br /><br />
+    <asp:HyperLink ID="link_roleManager" runat="server" NavigateUrl="~/admin/site_mgr/RoleMgmt.aspx">Role Manager</asp:HyperLink>
+    <br /><br /><hr />
         <h3>Create A New User:</h3>
         <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
             <WizardSteps>
