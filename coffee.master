@@ -15,7 +15,7 @@
         <div id="container">
             <div id="header">
                 <h1>Worldwide Coffee</h1>
-                <h3>So many types of coffee!</h3>
+                <h2>So many types of coffee!</h2>
             </div> <!-- close the header DIV -->
             
             <div id="menu">

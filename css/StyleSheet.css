@@ -1,6 +1,10 @@
 ﻿body {background-color: white;}
 
-h1 {font-family: Arial, Helvetica, sans-serif;}
+h1 {font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {font-family: Arial, Verdana, Forte;
+}
 h3 {font-family: Arial, Verdana, Forte;
     text-align: justify;
 }
